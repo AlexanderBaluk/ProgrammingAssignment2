@@ -34,6 +34,6 @@ cacheSolve <- function(x, ...) {
         }
         initialmtrx = x$get()   
         nvrtd = solve(initialmtrx, ...) ## Otherwise it returns inverse of the initial matrix using R function 'solve' 
-        x$setnvrtd(nvrtd)
+        x$setnvrtd(nvrtd)		## and sets into the cache.
         return(nvrtd)
 }
